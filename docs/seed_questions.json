@@ -1,0 +1,70 @@
+{
+  "questions": [
+    {
+      "id": "q001",
+      "level": "basic",
+      "text": "Write a formula to calculate the compound annual growth rate (CAGR) between two values where A1 contains the beginning value, B1 contains the ending value, and C1 contains the number of years.",
+      "type": "formula",
+      "skill_tags": ["formulas", "financial_functions"],
+      "time_limit": 300,
+      "golden_answer": {
+        "formula": "=(B1/A1)^(1/C1)-1",
+        "required_functions": ["POWER", "ABS"],
+        "alternative_formulas": ["=POWER(B1/A1,1/C1)-1"]
+      }
+    },
+    {
+      "id": "q002",
+      "level": "basic",
+      "text": "Explain how to remove duplicate values from a dataset in Excel and what precautions you should take.",
+      "type": "explain",
+      "skill_tags": ["data_cleaning"],
+      "time_limit": 240,
+      "golden_answer": {
+        "key_terms": ["Remove Duplicates", "Data tab", "backup", "unique values", "select range"],
+        "main_points": ["Select data range", "Use Data > Remove Duplicates", "Choose columns to check", "Always backup first"]
+      }
+    },
+    {
+      "id": "q003",
+      "level": "intermediate",
+      "text": "Create a pivot table from the provided sales data that shows total revenue by region and product category. Include percentage of grand total.",
+      "type": "practical",
+      "skill_tags": ["pivot_tables", "data_analysis"],
+      "time_limit": 420,
+      "golden_answer": {
+        "required_sheets": ["PivotTable"],
+        "requires_pivot": true,
+        "expected_values": {
+          "PivotTable!A1": "Region"
+        },
+        "check_data_cleaning": false
+      }
+    },
+    {
+      "id": "q004",
+      "level": "intermediate",
+      "text": "Write a formula using INDEX and MATCH to look up the price of a product by its name, where product names are in column A and prices are in column B.",
+      "type": "formula",
+      "skill_tags": ["lookup_functions", "formulas"],
+      "time_limit": 300,
+      "golden_answer": {
+        "required_functions": ["INDEX", "MATCH"],
+        "formula_pattern": "INDEX.*MATCH"
+      }
+    },
+    {
+      "id": "q005",
+      "level": "advanced",
+      "text": "Create a dynamic dashboard using the provided sales data. Include charts that automatically update when data changes, and use slicers for filtering.",
+      "type": "practical",
+      "skill_tags": ["dashboard_creation", "charts", "dynamic_data"],
+      "time_limit": 600,
+      "golden_answer": {
+        "required_sheets": ["Dashboard"],
+        "requires_charts": true,
+        "requires_slicers": true
+      }
+    }
+  ]
+}
